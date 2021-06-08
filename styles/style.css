@@ -1,0 +1,28 @@
+.boxImage{
+    display: flex;
+    justify-content: space-between; 
+
+}
+.boxMenu{
+    display: flex;
+}
+
+.lienMenu{
+    margin: 0 5px 0 5px;
+}
+body{
+    margin:5vh 5vw 0 5vw;
+<-- 
+}
+.boxbutton{
+    display: flex;
+    justify-content: left;
+
+}
+
+
+.filtres{
+display: flex;
+justify-content: space-between;
+
+}
