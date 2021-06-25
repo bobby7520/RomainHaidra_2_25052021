@@ -1,12 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-
+*{
+    padding: 1px ;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
 body{
     font-family: 'Raleway', sans-serif;
 }
 a {
     text-decoration: none;
+    color: black;
 }
 
+p{
+    color: black;
+}
 .boximage{
     display: flex;
     justify-content: space-between; 
@@ -23,6 +32,16 @@ a {
 
 }
 
+figure {
+    background-color: white;
+    padding: 0.375rem;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #0000002e;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    box-sizing: border-box;
+    height: 100%;
+}
 .boxbutton{
     display: flex;
     justify-content: left;
@@ -43,6 +62,7 @@ a {
     border-radius: 50px;
     height: 40px;
     color: black;
+    margin: .5rem;
 }
 .fa-info:before {
     content: "\f129";
@@ -58,18 +78,32 @@ justify-content: space-between;
 }
 
 p.textfiltre {
-    margin-right: 25%;
     font-weight: bold;
-    
+    padding: .5rem 1rem;
 }
 
-
+p {
+    color: black;
+    PADDING: 5PX;
+}
 .imgpetit{
     width: 235px;
     height: 114px;
-    border-radius: 25px 25PX 0px 0px
+    border-radius: 25px 25PX 0px 0px;
+ flex-wrap: wrap;
+
+}
+.imgpopulaire{
+    width: 235px;
+    height: 114px;
+    border-radius: 25px 25PX 0px 0px; 
+    padding: 10px;
 }
 
+.blocpopulaire{
+background-color:#F2F2F2 ;
+
+}
 .boxmobile{
     display: none;
 }
@@ -105,9 +139,24 @@ p.textfiltre {
     background-color: #0065FC;
     color:#DEEBFF ;
 }
-.img{
+.section{
     background-color: #F2F2F2;
 }
+.photoactivite{
+    height: 118px; ;
+width: 300px; ;
+border-radius: 25px 25PX 0px 0px; 
+font :bold;
+}
+
+.bandeau{
+    background-color:#F2F2F2 ;
+    text-decoration: black;
+}
+a:hover{
+    color: blue;
+}
+
 /*** RESPONSIVE **/
 
 @media screen and (min-width: 320px) and (max-width: 425px) {
