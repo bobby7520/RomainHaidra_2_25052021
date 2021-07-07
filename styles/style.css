@@ -25,6 +25,16 @@ p{
     justify-content: space-between; 
 
 }
+.main{
+    max-width: 1450px;
+    margin: auto;
+    display: grid;
+    grid-template-areas:    "containermain"
+                            "populaire"
+                            "hebergement"
+                            "activite";
+ grid-template-columns: 1fr;
+}
 .boxmenu{
     display: flex;
     width: 100%;
@@ -56,6 +66,13 @@ color: #0065FC;
     
 .espace{
     margin: 17px;
+}
+#activity{
+    grid-area: activity;
+}
+
+#hebergement{
+    grid-area: hebergement;
 }
 
 h2.titlepopular {
@@ -235,12 +252,16 @@ position: relative;
     justify-content: space-between;
     margin: 6vw;
 }
-.blocpopulaire{background-color:#F2F2F2;padding: 10px;margin-bottom: 6vh;height: 87vh;}
+.blocpopulaire
+{background-color:#F2F2F2;padding: 10px;margin-bottom: 6vh;height: 87vh;
+grid-area: populaire;
+}
 .boxmobile{
     display: block;
 }
 .containermain{
     margin: 6vw;
+    grid-area: containermain;
 }
 
 .lienfiltres i {
@@ -256,13 +277,14 @@ position: relative;
 .lienfiltres:hover{
     color:#0065FC ;
 }
-.lienfiltres i:hover { 
+.lienfiltres:hover i { 
     background-color: #0065FC;
     color:#DEEBFF ;
 }
 .lienfiltres:active{
     color:#0065FC ;
 }
+.lienfiltres
 .lienfiltres i:active { 
     background-color: #0065FC;
     color:#DEEBFF ;
@@ -297,6 +319,14 @@ a:hover{
 
 @media  (min-width: 1280px) 
  {
+     .main{
+         grid-template-areas: "containermain containermain"
+                                "hebergement populaire"
+                                "activity activity";
+                                grid-template-columns: 2fr 1fr;
+                                gap: 16px;
+                                
+     }
     .boxmobile{
         display: flex;
         flex-direction: column;
@@ -378,33 +408,35 @@ a:hover{
   }
   .boxbutton{
       justify-content: flex-start;
+      position: relative;
+      width: 420px;
   }
   .inputt{
-      width: 34vw;
+      flex: 1;
       text-align: center;
   }
   .boxbutton_marker{
-      width: 4vw;
-      left: 1vw;
+      width: 67px; 
+      left: 0;
   }
 .buttonre{
-    width: 5vw;
-    right: 63vw;
+    width: 62px;
+    right: 0;
 }
 
 #hebergement{
     display: flex;
     flex-direction: column;
-    width: 53%;
-    margin-left: 17px;
-    width: 62vw;
+    width: 100%;
+    
+    
 }
 
 .blocpopulaire{
     display: flex;
     justify-content: space-between;
     float: right;
-    width: 32%;
+    width: 100%;
     border-radius: 25px;
     margin-right: 12px;
     height: 80%;
