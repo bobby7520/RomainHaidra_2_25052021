@@ -4,7 +4,7 @@
 *{
     padding: 0px;
     margin: 0;
-    g: border-box;
+    box-sizing: border-box;
 }
 body{
     font-family: 'Raleway', sans-serif;
@@ -32,7 +32,7 @@ p{
     grid-template-areas:    "containermain"
                             "populaire"
                             "hebergement"
-                            "activite";
+                            "activity";
  grid-template-columns: 1fr;
 }
 .boxmenu{
@@ -131,6 +131,7 @@ figure {
 }
 .spacetitle{
     margin-left: 20px;
+    margin-top: 84px;
 }
 
 .inputt{
@@ -243,9 +244,9 @@ position: relative;
 }
 .blocpopulaire_card{
     display: flex;
-    height: 33%;
+    height: 150px;
     padding: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 .logo{
     display: flex;
@@ -253,7 +254,7 @@ position: relative;
     margin: 6vw;
 }
 .blocpopulaire
-{background-color:#F2F2F2;padding: 10px;margin-bottom: 6vh;height: 87vh;
+{background-color:#F2F2F2;padding: 10px;
 grid-area: populaire;
 }
 .boxmobile{
@@ -330,6 +331,8 @@ a:hover{
     .boxmobile{
         display: flex;
         flex-direction: column;
+        POSITION: RELATIVE;
+        padding: 0 16px;
     }
     .boximage{
         display: none;
@@ -337,21 +340,27 @@ a:hover{
     .logo{
         display: flex;
         justify-content: space-between;
-        margin: 10px;
+        margin: 0;
     }
     .boxmenu {
-        justify-content: space-around;
-  
+        POSITION: absolute;
+        width: 400px;
+        right: 200px;
+        line-height: 65px;
     }
     .filtres{
         display: block;
+        margin: 16px;
     }
     .activities{
         display: grid;
         grid-template-columns: repeat(4,1fr);
         gap: 16px;
-        grid-template-rows: 250px 45px 45px 250px;
+        grid-template-rows: 190px 65px 65px 190px;
     }
+    
+    
+    
 
     .photoactivite {
         height: 94%;
@@ -439,7 +448,7 @@ a:hover{
     width: 100%;
     border-radius: 25px;
     margin-right: 12px;
-    height: 80%;
+    height: 100%;
 }
 .blocpopulaire_card{
     height: 26%;
