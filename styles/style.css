@@ -352,6 +352,14 @@ a:hover{
         gap: 6px;
         grid-template-rows: 190px 65px 65px 190px;
     }
+    .smalltitle{
+        font-size: small;
+    }
+    .buttonre{
+     width: 40px;
+    height: 42px;
+    right: 82px;
+    }
     
     
     
