@@ -101,7 +101,7 @@ figure {
 }
 
 .containpopular{
-    height: 68vh;
+    height: 100%;
 }
 .boxbutton{
     display: flex;
@@ -225,6 +225,7 @@ bottom: 5px;
     height: 114px;
     border-radius: 25px 25PX 0px 0px;
  flex-wrap: wrap;
+ object-fit: cover;
 
 }
 .blocpopulaire_lieu{
@@ -290,13 +291,7 @@ grid-area: populaire;
     background-color: #0065FC;
     color:#DEEBFF ;
 }
-.lienfiltres:after{
-    color:#0065FC ;
-}
-.lienfiltres i:after { 
-    background-color: #0065FC;
-    color:#DEEBFF ;
-}
+
 .section{
     background-color: #F2F2F2;
 }
@@ -405,7 +400,7 @@ a:hover{
       display: grid;
       grid-template-columns: repeat(3,1fr);
       gap: 32px; 
-      padding: 6.2vw;
+      padding: 79px;
   }
   #hebergement{
       background-color: #F2F2F2;
@@ -413,7 +408,7 @@ a:hover{
       
   }
   .containermain{
-    margin: 2vw;
+    margin: 38px;
   }
   .boxbutton{
       justify-content: flex-start;
@@ -460,6 +455,43 @@ a:hover{
 .bandeau{
     display: flex;
     justify-content: center;
+}
+.textmenu{
+    line-height: 65px;
+}
+.lienmenuactive{
+    border-top: blue 2px solid;
+border-bottom-color: white;
+}
+.lienmenu{
+    border-bottom: none;
+}
+@media screen and (max-width: 770px) {
+
+    .containpopular{
+        width: 50%;
+
+    }
+    .blocpopulaire{
+        text-align: -webkit-center;
+    }
+
+    .containheberge {
+        padding: 0;
+        width: 50%;
+        margin-top: 25px;
+    }
+    #hebergement{
+        text-align: -webkit-center;
+    }
+    
+    .activities {
+        padding: 0vw;
+        width: 50%;
+        margin: auto;
+        margin-top: 17px;
+    }
+
 }
   
  }
