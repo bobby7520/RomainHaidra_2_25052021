@@ -162,7 +162,7 @@ border-radius: 10px 10px 10px 10px;
     
 width: 56px;
     
-height: 42px;
+height: 39px;
     
 right: 23px;
     
@@ -560,9 +560,10 @@ a:hover{
 }
 .textmenu{
     line-height: 65px;
+    color: #0065FC;
 }
 .lienmenuactive{
-    border-top: blue 2px solid;
+    border-top:#0065FC 4px solid;
 border-bottom-color: white;
 }
 .lienmenu{
@@ -570,7 +571,33 @@ border-bottom-color: white;
 }
 
 
+@media (min-width:2560px) {
+    .main{
+        margin: auto;
 
+    }
+.blocpopulaire_card{
+    height: 24%;
+}
+.spacetitle{
+    margin-top: 132px;
+
+}
+.logo{
+    justify-content: space-around;
+}
+.boxmenu{
+    right: 645px;
+}
+.containermain{
+    margin: 52px;
+}
+.buttonre{
+    height: 106px;
+}
+
+}
   
- }
+}
+
 }
